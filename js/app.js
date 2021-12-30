@@ -4,10 +4,7 @@ const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
 
-// Classes name 
-const CHECK = "fa-circle";
-const UNCHECK = "fa-check-circle";
-const LINE_THROUGH = "lineThrough";
+
 
 // variables
 let LIST, id ;
@@ -43,7 +40,10 @@ clear.addEventListener("click", function(){
     location.reload();
 });
 
-
+// Classes name 
+const CHECK = "fa-check-circle";
+const UNCHECK = "fa-circle";
+const LINE_THROUGH = "lineThrough";
 
 // Show todays date 
 const options = {weekday:"long", month:"short", day:"numeric"};
