@@ -41,8 +41,8 @@ clear.addEventListener("click", function(){
 });
 
 // Classes name 
-const CHECK = "fa-check-circle";
-const UNCHECK = "fa-circle";
+const CHECK = "fa-circle";
+const UNCHECK = "fa-check-circle";
 const LINE_THROUGH = "lineThrough";
 
 // Show todays date 
