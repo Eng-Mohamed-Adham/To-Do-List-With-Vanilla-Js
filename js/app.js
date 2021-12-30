@@ -4,7 +4,8 @@ const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
 
-
+const DONE = done ?  CHECK: UNCHECK;
+    const LINE = done ? "" : LINE_THROUGH;
 
 // variables
 let LIST, id ;
@@ -56,8 +57,7 @@ function addToDo(toDo, id, done, trash){
 
     if(trash){return;}
 
-    const DONE = done ?  CHECK: UNCHECK;
-    const LINE = done ? "" : LINE_THROUGH;
+    
 
     const item = `
                     <li class="item">
