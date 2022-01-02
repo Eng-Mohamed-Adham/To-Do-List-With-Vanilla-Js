@@ -4,8 +4,10 @@ const dateElement = document.getElementById("date");
 const list = document.getElementById("list");
 const input = document.getElementById("input");
 
-const DONE = done ?  CHECK: UNCHECK;
-    const LINE = done ? "" : LINE_THROUGH;
+// Classes name 
+const CHECK = "fa-circle";
+const UNCHECK = "fa-check-circle";
+const LINE_THROUGH = "lineThrough";
 
 // variables
 let LIST, id ;
@@ -41,10 +43,7 @@ clear.addEventListener("click", function(){
     location.reload();
 });
 
-// Classes name 
-const CHECK = "fa-circle";
-const UNCHECK = "fa-check-circle";
-const LINE_THROUGH = "lineThrough";
+
 
 // Show todays date 
 const options = {weekday:"long", month:"short", day:"numeric"};
@@ -57,7 +56,8 @@ function addToDo(toDo, id, done, trash){
 
     if(trash){return;}
 
-    
+    const DONE = done ?  CHECK: UNCHECK;
+    const LINE = done ? "" : LINE_THROUGH;
 
     const item = `
                     <li class="item">
